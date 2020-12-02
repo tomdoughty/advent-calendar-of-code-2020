@@ -6,9 +6,10 @@
  * @return {number} - Answer
  */
 module.exports = (array = []) => {
+  const numbers = array.map(Number);
   // eslint-disable-next-line no-restricted-syntax
-  for (const num1 of array) {
-    const num2 = array.find((num) => (num1 + num) === 2020);
+  for (const num1 of numbers) {
+    const num2 = numbers.find((num) => (num1 + num) === 2020);
     if (num2) return num1 * num2;
   }
   return null;

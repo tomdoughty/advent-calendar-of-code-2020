@@ -7,9 +7,10 @@
  */
 /* eslint-disable no-restricted-syntax */
 module.exports = (array = []) => {
-  for (const num1 of array) {
-    for (const num2 of array) {
-      const num3 = array.find((num) => (num1 + num2 + num) === 2020);
+  const numbers = array.map(Number);
+  for (const num1 of numbers) {
+    for (const num2 of numbers) {
+      const num3 = numbers.find((num) => (num1 + num2 + num) === 2020);
       if (num3) return num1 * num2 * num3;
     }
   }

@@ -4,9 +4,9 @@ const fs = require('fs');
  * Convert input string into array of numbers
  *
  * @param {string} input - input file contents as a string
- * @return {number[]} - Array of numbers
+ * @return {string[]} - Array of rows
  */
-const splitInput = (input) => input.split('\n').map(Number);
+const splitInput = (input) => input.split('\n');
 
 /**
  * Read input file into a string
